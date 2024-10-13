@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case - 4</title>
+    <link rel="stylesheet" href="/css/case4.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle_screen"></div>
+      <div class="on_click"></div>
+    </section>
+
+    <script>
+      const onClickElement = document.querySelector(".on_click");
+
+      document.addEventListener("click", function (e) {
+        const x = e.clientX;
+        const y = e.clientY;
+
+        onClickElement.style.cssText = `left: ${x}px; top: ${y}px;`;
+
+        onClickElement.classList.remove("active");
+        void onClickElement.offsetWidth;
+        onClickElement.classList.add("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle_screen {
+  border: 2px solid red;
+  border-radius: 50%;
+  animation: onScreen 1s ease infinite;
+}
+
+.on_click {
+  width: 10px;
+  height: 10px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.5);
+  position: absolute;
+}
+
+.active {
+  animation: click 1s forwards;
+}
+
+@keyframes onScreen {
+  from {
+    width: 5px;
+    height: 5px;
+  }
+
+  to {
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+  }
+}
+
+@keyframes click {
+  from {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
