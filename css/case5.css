@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  width: calc(100vw * 4);
+  animation: slider 20s infinite;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@keyframes slider {
+  0%,
+  10% {
+    transform: translateX(calc(-100vw * 3));
+  }
+
+  15%,
+  25% {
+    transform: translateX(calc(-100vw * 2));
+  }
+
+  30%,
+  40% {
+    transform: translateX(-100vw);
+  }
+
+  45%,
+  55% {
+    transform: translateX(0);
+  }
+
+  60%,
+  70% {
+    transform: translateX(-100vw);
+  }
+
+  75%,
+  85% {
+    transform: translateX(calc(-100vw * 2));
+  }
+
+  90%,
+  100% {
+    transform: translateX(calc(-100vw * 3));
+  }
+}
