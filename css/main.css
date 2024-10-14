@@ -50,6 +50,7 @@ header {
   width: 100vw;
   position: fixed;
   box-shadow: 0 0 10px #fe0f4e;
+  z-index: 1;
 }
 
 .header_content {
@@ -116,6 +117,7 @@ header {
 .assignment {
   margin-top: 100px;
   text-align: center;
+  margin-bottom: 150px;
 }
 
 .assignment h2 {
