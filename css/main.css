@@ -59,6 +59,7 @@ header {
   align-items: center;
   padding: 8px;
   font-size: 1.125rem;
+  margin-right: 16px;
 }
 
 .profile_container {
