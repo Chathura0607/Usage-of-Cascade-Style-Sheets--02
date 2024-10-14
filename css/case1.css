@@ -30,6 +30,7 @@ body {
 
 .item:hover {
   left: 0;
+  cursor: pointer;
 }
 
 .item > p {
